@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ .Values.statefulSet.name }}
+spec:
+  serviceName: "nginx"
+  replicas: {{ .Values.statefulSet.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.statefulSet.appLabel }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.statefulSet.appLabel }}
+    spec:
+      initContainers:
+      - name: init-my-container
+        image: {{ .Values.statefulSet.initContainerImage }}
+        command: ['sh', '-c', 'echo "Hello, World!" > /mnt/data/index.html']
+        volumeMounts:
+        - mountPath: /mnt/data
+          name: my-storage
+      containers:
+      - name: my-container
+        image: {{ .Values.statefulSet.containerImage }}
+        ports:
+        - containerPort: 80
+          name: http
+        volumeMounts:
+        - mountPath: /usr/share/nginx/html
+          name: my-storage
+  volumeClaimTemplates:
+  - metadata:
+      name: my-storage
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: {{ .Values.statefulSet.storageRequest }}
+      storageClassName: {{ .Values.statefulSet.storageClassName }}
+

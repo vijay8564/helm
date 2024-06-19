@@ -1,0 +1,23 @@
+persistentVolume:
+  name: my-pv
+  size: 10Gi
+  accessMode: ReadWriteOnce
+  reclaimPolicy: Retain
+  storageClassName: standard
+  hostPath: /mnt/data/my-pv
+
+persistentVolumeClaim:
+  name: my-pvc
+  size: 10Gi
+  accessMode: ReadWriteOnce
+  storageClassName: standard
+
+statefulSet:
+  name: my-statefulset
+  replicas: 5
+  appLabel: my-app
+  initContainerImage: busybox
+  containerImage: nginx:latest
+  storageRequest: 1Gi
+  storageClassName: standard
+
