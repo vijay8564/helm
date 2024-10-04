@@ -14,7 +14,7 @@ persistentVolumeClaim:
 
 statefulSet:
   name: my-statefulset
-  replicas: 16
+  replicas: 11
   appLabel: my-app
   initContainerImage: busybox
   containerImage: nginx:latest
