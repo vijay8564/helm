@@ -2,23 +2,93 @@ apiVersion: v1
 entries:
   my-app:
   - apiVersion: v2
-    appVersion: 1.2.0
-    created: "2024-06-19T21:32:03.882674251+05:30"
+    appVersion: 1.2.2
+    created: "2024-10-05T00:59:55.516643905+05:30"
     description: A Helm chart for Kubernetes
-    digest: 7d1115023336e4155143df3a240adbbbd9343a98c3069d4a1d03926c500e3f55
+    digest: d93c4cf8a7d6a81b5da66bb2750f4c44377d00bc091de7f30b3879f032efdac5
     name: my-app
     type: application
     urls:
-    - https://github.com/vijay8564/helm.git/my-app-0.2.0.tgz
+    - https://github.com/vijay8564/helm-repos.git/my-app-0.2.6.tgz
+    version: 0.2.6
+  - apiVersion: v2
+    appVersion: 1.2.2
+    created: "2024-10-05T00:59:55.32534709+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 1f2f97a0e52bcc1cf91798f1c553b511061e73b90364080f2d93544d351d50e9
+    name: my-app
+    type: application
+    urls:
+    - https://github.com/vijay8564/helm-repos.git/my-app-0.2.5.tgz
+    version: 0.2.5
+  - apiVersion: v2
+    appVersion: 1.2.2
+    created: "2024-10-05T00:59:55.278689437+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 0d9fe22c319c9e2b78c35943e083e8e8eadc80c72807242438cf88259731ad83
+    name: my-app
+    type: application
+    urls:
+    - https://github.com/vijay8564/helm-repos.git/my-app-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: 1.2.2
+    created: "2024-10-05T00:59:55.202549951+05:30"
+    description: A Helm chart for Kubernetes
+    digest: b96b4639f3f6d3544f78bbc4e1f1b7497109252c7ee13960abc62f202b46c8a7
+    name: my-app
+    type: application
+    urls:
+    - https://github.com/vijay8564/helm-repos.git/my-app-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: 1.2.1
+    created: "2024-10-05T00:59:55.189845937+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 1f806735136a41b12053765fdb09ceda32c5fd5ce36925337c7bf36994711327
+    name: my-app
+    type: application
+    urls:
+    - https://github.com/vijay8564/helm-repos.git/my-app-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2024-10-05T00:59:55.180385626+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 300dca939647cb5743bfc4aeee68ad112233d8a2121f0b957a84282258cc5c6b
+    name: my-app
+    type: application
+    urls:
+    - https://github.com/vijay8564/helm-repos.git/my-app-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2024-10-05T00:59:55.17510152+05:30"
+    description: A Helm chart for Kubernetes
+    digest: b82283b4072e4fcfab5abfbef8c9dbbea3666c9106b82ffe2875867971e202cb
+    name: my-app
+    type: application
+    urls:
+    - https://github.com/vijay8564/helm-repos.git/my-app-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2024-06-19T21:32:03.85091835+05:30"
+    appVersion: 1.2.0
+    created: "2024-10-05T00:59:55.170538415+05:30"
     description: A Helm chart for Kubernetes
-    digest: 881117e35f01c4b91d22b6197639f4a1f8a90e53defe71621a1fbab1147b43b5
+    digest: 327c138e43a0b18ca9fce8adfe65f0a2f90bae135290c51d0ad2d4ea7281e869
     name: my-app
     type: application
     urls:
-    - https://github.com/vijay8564/helm.git/my-app-0.1.0.tgz
+    - https://github.com/vijay8564/helm-repos.git/my-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-19T21:32:03.84670075+05:30"
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2024-10-05T00:59:55.518633308+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 1a40b8a8bc3a77061d2f1fc4b8902d65f1a71a7dfedae286a0f975ebe0847212
+    name: my-app
+    type: application
+    urls:
+    - https://github.com/vijay8564/helm-repos.git/chartstorage/my-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-10-05T00:59:55.16585401+05:30"
