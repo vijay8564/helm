@@ -1,0 +1,23 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: my-app
+  namespace: default
+spec:
+  chart:
+    spec:
+      # Specify the path to your local chart
+      chart: ./my-app-0.1.0.tgz
+      # Interval for reconciling changes; adjust as needed
+      interval: 5m
+  releaseName: my-app
+  values:
+    replicaCount: 2
+    image:
+      repository: my-app-image-repo
+      tag: "0.1.0"
+      pullPolicy: IfNotPresent
+    service:
+      type: ClusterIP
+      port: 80
+

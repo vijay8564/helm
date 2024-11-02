@@ -1,0 +1,11 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: my-app-repo
+  namespace: default
+spec:
+  interval: 1m
+  url: https://github.com/vijay8564/helm.git  # Replace with your repo URL
+  ref:
+    branch: main  # Replace with the branch you want to track
+
